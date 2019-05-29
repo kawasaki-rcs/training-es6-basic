@@ -1,39 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component
 {
   constructor (props) {
     super(props);
-    this.state = {
-      tmp: "",
-      text: "",
-    };
+    this.state = {};
   }
 
-  //handleChange = e => this.setState({ tmp: e.target.value, });
-  handleChange = ({ target: { value } }) => this.setState({ tmp: value, });
+  // ここに JavaScript の関数を追記していく
 
-  handleSubmit = e => {
-    const { text, tmp } = this.state;
-    this.setState({
-      text: text + ' ' + tmp,
-      tmp: "",
-    });
-  }
 
   render () {
-    const { text, tmp } = this.state;
+    /* 
+    // メッセージ１件
+    let comment = {
+      user: "kawasaki",
+      message: "こんにちは",
+    };
+    // メッセージ複数件
+    let comments = [
+      { user: "takamatsu", message: "こんにちは" },
+      { user: "marugame", message: "こんばんは" },
+      { user: "sakaide", message: "おはようございます" },
+    ];
+    */
+
+    // ここに JavaScript の手続きを追記していく
+
     return (
       <div className="App">
-      Hello World !!
-      {/** ここにコードを追記していく */}
-        <div>
-          <input type="text" value={tmp} onChange={this.handleChange} />
-          <button type="button" onClick={this.handleSubmit} >送信</button>
-        </div>
-        <h1>{text}</h1>
+        {/** ここにHTML/JavaScriptを追記していく */}
       </div>
     );
   }
